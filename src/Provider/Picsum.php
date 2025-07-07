@@ -18,12 +18,12 @@ class Picsum extends Image {
 	 */
 	public static function imageUrl(
 		$width = 640,
-		$height = 480,
-		$filters = [],
-		$format = 'jpg',
-		$unused = false,
-		$unused_ = false,
-		$unused3 = false
+    		$height = 480,
+    		$category = null,
+    		$randomize = true,
+    		$word = null,
+    		$gray = false,
+    		$format = 'png'
 	) {
 		$format = strtolower( $format );
 		$url    = sprintf(
